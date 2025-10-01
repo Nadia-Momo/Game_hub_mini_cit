@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kitchen Dash</title>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<!-- scoreboard and timer part start -->
+<div id="scoreboard">
+<div class="score-box" id="scoreDisplay">
+🏆 Score: <span id="score">0</span>
+  </div>
+  <div class="timer-box" id="timeDisplay">
+    ⏳ Time: <span id="timer">180</span>s
+  </div>
+</div>
+<!-- scoreboard and timer part end -->
+ 
+ <!-- current dish name -->
+<div id="current_dish"></div>
+
+<!-- game area part start -->
+<div id="main_area">
+<!-- recipe book part start -->
+<div class="recipe_book">
+  <img src="images/sticky-note.png" alt="" id="thumbtack">
+<ul id="recipe_list"></ul>
+</div>
+<!-- recipe book part end -->
+ <!-- Table part start -->
+  <div>
+    <div class="table">
+<img src="images/pink_wood.jpeg" alt="" id="pink_wood">
+
+  <img src="images/plate.png" alt="" id="plate">
+</div>
+  </div> 
+  <!-- table part end -->
+
+<!-- main ingredients part start  -->
+<div id="main_ingredients">
+  <img src="" alt="" id="main_dish">
+<ol id="ingredients"></ol>
+</div>
+</div>
+<!-- main ingredients part end -->
+
+<!-- game area part end -->
+ 
+
+<script src="js/script.js"></script>
+</body>
+</html>

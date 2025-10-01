@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitty Café</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Responsiv.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <!-- Level and coin display -->
+<div id="coin-bar">💰 <span id="coin-count">0</span></div>
+ <div id="level-bar">🏆 Level:<span id="level-count">1</span></div>
+ <!-- cafe area start -->
+<div id="cafe">
+  <!-- Roaming cat part start -->
+<div class="roamingCat">
+  <img src="images/cat_4.png" alt="" srcset="" id="roamingCat">
+</div>
+<!-- Roaming cat part end -->
+ <!-- decoration ingredients part start -->
+ <div class="cactus">
+  <img src="images/cacutusddd.png" alt="" id="cactusimg">
+   </div>
+<div class="sacculent">
+  <img src="images/cacatus-removebg-preview.png" alt="" srcset="" id="sacculentimg">
+</div>
+<div class="mirror">
+  <img src="images/mirror-removebg-preview.png" alt="" srcset="" id="mirrorimg">
+</div>
+<div class="kawaii_decol">
+  <img src="images/_Pngtree_kawaii_decal_for_the_pot_22471923-removebg-preview.png" alt="" srcset="" id="kawaiidecolimg">
+
+
+<div class="cute_animated">
+<img src="images/—Pngtree—cute.png" alt="" srcset="" id="cute_animatedimg">
+</div>
+</div>
+<!-- decoration ingredients part end -->
+<!-- 3 table -->
+<div class="table" id="table1"></div>
+<div class="table" id="table2"></div>
+<div class="table" id="table3"></div>
+</div>
+<!-- cafe area part end -->
+ <!-- cat-cushion part start -->
+<div class="catCushion" id="catCushion">
+  <div id="foodBubble"></div>
+<img src="images/cat_1.png" alt="" id="sittingcat" >
+
+</div>
+ <!-- cat-cushion part end -->
+  <!-- case container -->
+ <div class="case" id="case">
+  
+ </div>
+
+<div class="monster">
+  <img src="images/plant_monster-removebg-preview.png" alt="" srcset="" id="monsterimg">
+</div>
+<!-- decor button -->
+<button class="decor-btn">✨Decor</button>
+<!-- Modal for decoration part start-->
+<div class="modal" id="decorModal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2>🪴 Choose Decoration 🏡</h2>
+<div class="decor-grid">
+<div class="decor-card">
+<img src="images/_Pngtree_kawaii_decal_for_the_pot_22471923-removebg-preview.png" alt="Small Plant 1">
+<h3>Small Decor Plant</h3>
+ <p id="priceTextsm1" >Price: 350 🪙</p>
+<div class="decor-actions">
+<button class="place-btn" id="smplace">Place</button>
+<button class="remove-btn" id="smremove">Remove</button>
+</div>
+</div>
+<!-- Small Plant 2 -->
+ <div class="decor-card">
+ <img src="images/—Pngtree—cute.png" alt="Small Plant 2">
+<h3>Small Decor Plant</h3>
+ <p id="priceTextsm2">Price: 450 🪙</p>
+<div class="decor-actions">
+<button class="place-btn" id="sm1place">Place</button>
+<button class="remove-btn" id="sm1remove">Remove</button>
+</div>
+</div>
+<div class="decor-card">
+ <img src="images/cacatus-removebg-preview.png" alt="Big Cactus">
+<h3>Big Cactus</h3>
+<p id="priceTextsm3">Price: 1500 🪙</p>
+ <div class="decor-actions">
+<button class="place-btn" id="BcacPlace">Place</button>
+<button class="remove-btn" id="BcacRemove">Remove</button>
+ </div>
+</div>
+<!-- Mirror -->
+<div class="decor-card">
+ <img src="images/mirror-removebg-preview.png" alt="Mirror">
+<h3>Mirror</h3>
+        <p id="priceTextsm4">Price: 3000 🪙</p>
+        <div class="decor-actions">
+          <button class="place-btn" id="mirrorPlace">Place</button>
+          <button class="remove-btn" id="mirrorRemove">Remove</button>
+        </div>
+      </div>
+      <!-- Big Succulent -->
+      <div class="decor-card">
+        <img src="images/cacutusddd.png" alt="Succulent Plant" >
+      
+        <h3>Succulent Plant</h3>
+        <p id="priceTextsm5">Price: 5000 🪙</p>
+        <div class="decor-actions">
+          <button class="place-btn" id="succPlace">Place</button>
+          <button class="remove-btn" id="succRemove">Remove</button>
+        </div>
+      </div>
+    
+     <div class="decor-card">
+        <img src="images/table.png" alt="Table level 1">
+        <h3>Table 1</h3>
+        <p>Price: 100 🪙</p>
+        <div class="decor-actions">
+          <button class="place-btn">Place</button>
+          <button class="remove-btn">Remove</button>
+        </div>
+      </div>
+     <div class="decor-card">
+        <img src="images/table_2.png" alt="Table level 1">
+        <h3>Table 2</h3>
+        <p>Price: 200 🪙</p>
+        <div class="decor-actions">
+          <button class="place-btn">Place</button>
+          <button class="remove-btn">Remove</button>
+        </div>
+      </div>
+     <div class="decor-card">
+        <img src="images/table_3.png" alt="Table level 1">
+        <h3>Table 3</h3>
+        <p>Price: 300 🪙</p>
+        <div class="decor-actions">
+          <button class="place-btn">Place</button>
+          <button class="remove-btn">Remove</button>
+        </div>
+      </div>
+      <div class="decor-card">
+        <img src="images/table_4.png" alt="Table level 1">
+        <h3>Table 3</h3>
+        <p>Price: 400 🪙</p>
+        <div class="decor-actions">
+          <button class="place-btn">Place</button>
+          <button class="remove-btn">Remove</button>
+        </div>
+      </div>
+       <div class="decor-card">
+        <img src="images/plant_monster-removebg-preview.png" alt="Table level 1">
+        <h3>Monster Plant</h3>
+        <p id="priceTextsm6">Price: 100000 🪙</p>
+        <div class="decor-actions">
+          <button class="place-btn" id="mplace">Place</button>
+          <button class="remove-btn" id="mremove">Remove</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal for decoration part end-->
+<script src="js/script.js"></script>
+<script>
+  // for responsive
+  function checkDevice() {
+    if (window.innerWidth < 1280) {
+      document.body.innerHTML = "";
+      Swal.fire({
+        icon: 'error',
+        title: 'Screen Too Small',
+        text: '❌ This game only works on devices with 1280px or larger screen.',
+        confirmButtonText: 'Ok'
+      });
+    }
+  }
+
+  window.onload = checkDevice;
+  window.onresize = checkDevice;
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+body{
+ background-image: url('../images/hauted_house.webp');
+ /* ../images/hauted_house.webp */
+    background-attachment: fixed;
+  background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+*{
+    margin:0;
+    padding:0;
+}
+/* scoreboard part start */
+#stage{
+  position:relative;
+  width:100%;
+  height:100vh;
+ overflow: hidden;
+}
+
+#scoreboard {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 30px;
+    padding: 10px 25px;
+    background: rgba(0,0,0,0.7);
+    border: 2px solid #ffcc00;
+    border-radius: 15px;
+    color: #00ffcc;
+    font-size: 1.5rem;
+    text-shadow: 0 0 5px #00ffcc, 0 0 10px #006666;
+    box-shadow: 0 0 20px #ffcc00;
+    font-family: 'Creepster', cursive;
+    user-select: none; 
+    z-index: 100;
+}
+
+#score, #missed {
+    margin: 0;
+}
+/* scoreboard part end */
+/* ghost part start */
+.ghost{
+  position:absolute;
+  width:80px;
+  height:100px;
+  transition:translate(-50%,-50%);
+  cursor:pointer;
+ 
+}
+.ghost.fading{
+  opacity:0;
+   transition:opacity 0.5s ease;
+}
+/* ghost part end */
+/* SweetAlert2 backdrop blur globally */
+.swal2-container {
+  backdrop-filter: blur(8px);
+}

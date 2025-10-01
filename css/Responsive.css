@@ -1,0 +1,203 @@
+/*--------- extra small device ----------*/
+@media (max-width: 575.98px){
+  
+    /* ----banner part start----- */
+.banner-overlay{
+    width:88%;
+    margin-left: 13px;
+      margin-top: 100px;
+      height:50%;
+}
+.banner-overlay h1{
+    font-size: 30px;
+}
+.banner-overlay p{
+    width:100%;
+      width: 250px;           
+      white-space: nowrap;    
+      overflow: hidden;       
+      text-overflow: ellipsis;
+}
+.nrr{
+    left:54%;
+     top:73%;
+}
+.prr{
+    top:73%;
+    left:32%;
+}
+/* --------banner part end------- */
+/* -----category part start----- */
+.button{
+  padding: 14px 15px;
+}
+.category_flex{
+    gap:20px;
+}
+/*--------- category part end------- */
+/* ----------Trendy games part start----------- */
+.trendy_header{
+   display:flex;
+   flex-wrap: wrap;
+
+}
+.trendy_header .see_more_button1{
+    margin-left: 20%;
+}
+.review .common_head {
+
+  font-size: 25px;}
+.trendy_games .common_head {
+  font-family: "Russo One", sans-serif;
+  margin-bottom: 20px;
+  font-size: 30px;
+  margin-top: 20px;}
+/* ----------Trendy games part end----------- */
+/* ----Game collection part start----- */
+.game_collection .common_head h2 {
+
+  font-size: 23px;}
+.see_more_button{
+    margin-left: 6%;}
+    .game_collection .common_head{
+        display:flex;
+        flex-wrap: wrap;
+    }
+/* ----Game collection part end------- */
+/* ----footer part start------ */
+.footer_main_part{
+    flex-wrap: wrap;
+}
+.footer_input{
+    width:100%;
+}
+.footer_button{
+   margin-top: 10px;
+   width:100%;
+}
+/* -----footer part end-------- */
+}
+/*------------small device------------------  */
+@media (min-width: 576px) and (max-width: 767.98px){
+   
+    /*------- banner part start -------*/
+    .banner-overlay{
+        width:100%;
+        margin-left:100%;
+    }
+.banner-overlay h1{
+    font-size: 38px;
+}
+.prr{
+    top:74%;
+    left:41%;
+}
+.nrr{
+    left:58%;
+    top:74%
+}
+/*------- category part start ------*/
+.category_flex{
+    gap:20px;
+}
+
+.game_collection .common_head h2{
+    font-size: 26px;
+}
+.see_more_button{
+    margin-left: 3%;
+}
+.game_collection .common_head{
+    align-items: center;
+}
+.trendy_header {
+  display: flex;
+  align-items: center;
+}
+/* -------category part end--------- */
+/*------ banner part end --------*/
+/* ----footer part start------ */
+.footer_main_part{
+    flex-wrap: wrap;
+}
+.footer_input{
+    width:100%;
+}
+.footer_button{
+   margin-top: 10px;
+   width:100%;
+}
+/* -----footer part end-------- */
+}
+/*--------- medium device ------------*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+/* banner part start */
+  .banner-overlay{
+        width:100%;
+        margin-left:100%;
+    }
+    .prr{
+        top: 48%;
+    }
+    .nrr{
+         top: 48%;
+    }
+  /*banner part end  */
+  /* category part start */
+ .category_flex{
+    gap:20px;
+}
+.category_button {
+  left: 40%;
+} 
+.see_more_button{
+    margin-left: 2%;
+}
+.trendy_header {
+  display: flex;
+  gap: 158px;
+  align-items: center;
+}
+  /* category part end */
+  /* ----footer part start------ */
+.footer_main_part{
+    flex-wrap: wrap;
+}
+.footer_input{
+    width:100%;
+}
+.footer_button{
+   margin-top: 10px;
+   width:100%;
+}
+/* -----footer part end-------- */
+}
+/*------------ large device -----------*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /*----- navbar part start ------*/
+    .see_more_button{
+       margin-left: 61%;     
+    }
+ .see_more_button1{
+    margin-left: 61%;
+ }
+    /*----- navbar part end ------*/
+/* banner part start */
+     .banner-overlay{margin-left: 162px;} 
+.nrr{
+    left:93%;
+}
+/* banner part end */
+/* ----footer part start------ */
+.footer_main_part{
+    flex-wrap: wrap;
+}
+.footer_input{
+    width:100%;
+}
+.footer_button{
+   margin-top: 10px;
+   width:100%;
+}
+/* -----footer part end-------- */
+}

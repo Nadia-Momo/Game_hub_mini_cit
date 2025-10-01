@@ -1,0 +1,91 @@
+/*------------- extra small device ----------*/
+@media (max-width: 575.98px) {
+#scoreboard {
+  position: absolute;
+  width: 95%;
+
+  padding: 10px 2px;
+  border-radius: 14px;
+
+  left: -5px;
+ }
+#scoreboard .title {
+  font-size: 20px;}
+#scoreboard .stats {
+  font-size: 17px;}
+  #game {
+  position: relative;
+  width: 100%;
+}
+#game img{
+  width: 30px !important;
+  height:30px !important;
+}
+#basket{
+  width:83px;
+}
+}
+/*--------- small device ------------*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+#scoreboard{
+ width: 95%;
+  left: 1px;
+  padding: 9px 7px;
+}
+#scoreboard .title {
+  font-size: 22px;}
+  #scoreboard .stats {
+  font-size: 17px;}
+  #game {
+     position: relative;
+  width: 100%;}
+  #basket{
+  width:100px;
+}
+#game img{
+  width: 40px !important;
+  height:40px !important;
+}
+}
+/*--------- medium device ------------*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+#scoreboard {
+  width: 95%;
+  padding: 7px 15px;
+left: 1px;
+}
+#scoreboard .title {
+  font-size: 22px;}
+  #scoreboard .stats {
+  font-size: 19px;}
+  #game {
+  width: 100%;}
+  #basket{
+    width: 195px;
+  }
+  #game img{
+  width: 45px !important;
+  height:45px !important;
+}
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+#scoreboard {
+
+  width: 80%;
+
+margin: 0 auto;
+}
+#scoreboard .title {
+  font-size: 22px;}
+  #scoreboard .stats {
+  font-size: 17px;}
+
+  #game{
+    width:100%;
+  }
+    #game img{
+  width: 50px !important;
+  height:50px !important;
+}
+}
+ 

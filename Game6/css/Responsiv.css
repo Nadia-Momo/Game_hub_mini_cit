@@ -1,0 +1,65 @@
+@media (max-width: 575.98px) {
+
+#table1{
+    top:408px;
+    left:-22px;
+}
+#table3{
+    top: 408px;
+    left: 116px;  
+}
+#table2{
+  top:425px; 
+    left:205px; 
+}
+#level-bar {
+  position: absolute;
+  top: 32px;
+  left: 17%;
+  padding: 8px 15px;
+  font-size: 16px;
+}
+#coin-bar{
+    position: absolute;
+    left: 74%;
+    top: 32px;
+    font-size: 16px;
+}
+.catCushion {
+ margin-top: -184px;
+    margin-left: 13px;
+    width: 191px;
+    height: 298px;
+    z-index: 1000;
+}
+#sittingcat {
+  left: 67px;
+  top: 465px;}
+  #foodBubble {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  position: absolute;
+  left: 79px;
+    top: 434px;}
+    .case {
+  position: absolute;
+  bottom: 0;
+  top: 182px;
+  left: -13px;
+  width: 192px;
+  height: 300px;}
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  
+
+}
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+
+    
+ }
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+   
+}

@@ -1,0 +1,56 @@
+/* -------common css start */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    background-image: url("../images/duckhunt-bg-4k.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    cursor: url("../images/target.png"),auto;
+}
+img{
+    
+    vertical-align: middle;
+}
+p{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+h1{
+    color: red;
+    font-size: 50px;
+ 
+}
+.gameOver{
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+h2{
+   font-size: 40px;
+   color:#5D2F77;
+   text-align: center;
+}
+button{
+    border-radius: 10px;
+    padding: 15px 25px;
+    background-color: #31326F;
+    color: white;
+    font-size: 20px;
+
+}
+/* -------common css end */
+/* -------common css start */
+/* -------common css end */
+/* -------common css start */
+/* -------common css end */
+/* -------common css start */
+/* -------common css end */

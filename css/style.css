@@ -1,0 +1,557 @@
+/*------- font link ------------*/
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+/*---------- font link -----------*/
+/* ----Common css----------------- */
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    
+}
+body{
+  position:relative;
+
+}
+h1,h2,h3,h4,h5,h6,p,ul,ol{
+    margin:0 !important;
+    padding:0 !important;
+}
+ .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  border: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(37, 37, 37);
+  z-index: 0;
+  box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
+  background: #ffffff; /* default background */
+}
+
+.button:hover {
+  background: #e29587;
+  color: rgb(33, 0, 85);
+}
+
+.button:active {
+  transform: scale(0.97);
+}
+
+.hoverEffect {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.hoverEffect div {
+  background: linear-gradient(
+    90deg,
+    #e29587 0%,
+    #ef3b36 50%,
+    #ffffff 100%
+  );
+  border-radius: 40rem;
+  width: 10rem;
+  height: 10rem;
+  transition: 0.4s;
+  filter: blur(20px);
+  animation: effect infinite 3s linear;
+  opacity: 0.6;
+}
+
+.button:hover .hoverEffect div {
+  width: 8rem;
+  height: 8rem;
+}
+
+@keyframes effect {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*------ nav bar part start --------*/
+.main_menu{
+ background: linear-gradient(135deg, #ef3c3632 0%, #ef3c3632 100%);
+  font-family: "Montserrat Alternates", sans-serif;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  position:fixed;
+  top:0;
+  left:0;
+  z-index: 1000;
+ width:100%;
+font-weight: 500;
+}
+.main_menu .navlogo img{
+    width:40px;
+    height:40px;
+}
+.main_menu ul li a{
+     color:black !important;
+     font-size: 16px !important;
+}
+.user_logo img{
+    width:40px;
+    height:40px;
+    margin-top: -5px;
+}
+.main_menu .nav-link{
+    color: white !important;
+}
+/* all games nav part start */
+.main_men_ref{
+  position: fixed;
+
+}
+.dropdown-menu{
+   background: linear-gradient(135deg, #ef3c367d 0%, #ffffffd2 100%);
+   
+}
+.dropdown-menu  .dropdown-item{
+  color: white !important;
+}
+.dropdown-menu  .dropdown-item:hover{
+background: #ffc0cb;
+color:#ef3b36 !important;
+}
+/*----------- banner part start ---------------*/
+ .single_items {
+  width: 100%;         
+  height: 100vh;       
+display:flex;
+align-items: center;
+}
+.item1{
+    background: url('../images/image_1.jpg') fixed no-repeat center center;
+      background-size: 100% 100%;  
+}
+.item2{
+    background: url('../images/image_2.jpg') fixed no-repeat center center;
+      background-size: 100% 100%;  
+}
+.item3{
+    background: url('../images/image_3.jpg') fixed no-repeat center center;
+      background-size: 100% 100%;  
+}
+.item4{
+    background: url('../images/image_4.jpg') fixed no-repeat center center;
+      background-size: 100% 100%;  
+}
+.item5{
+    background: url('../images/image_5.jpg') fixed no-repeat center center;
+      background-size: 100% 100%;  
+}
+.item6{
+background: url('../images/image_6.jpg') fixed no-repeat center center;
+background-size: 100% 100%;  
+}
+.item7{
+background: url('../images/image_7.jpg') fixed no-repeat center center;
+background-size: 100% 100%;  
+}
+.banner-overlay{
+ background: linear-gradient(135deg, #ef3c3632 0%, #ffffff9b 100%);
+width:643px;
+height:250px;
+padding: 20px;
+border-radius: 15px;
+text-align: center;
+margin-left: 500px;
+ backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+   box-shadow: 0 8px 32px rgba(0, 128, 255, 0.25);
+  margin-top: 120px;
+  
+}
+.banner-overlay h1{
+font-family: "Russo One", sans-serif;
+font-size: 55px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ef3b36 0%, #ffffff3c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ 
+}
+.banner-overlay p{
+ width:546px;
+ height:78px;
+ font-family: "Montserrat Alternates", sans-serif;
+ text-align: center;
+ margin-top: 20px;
+ color:white;
+ font-size: 16px;
+ font-weight: bolder;
+}
+.bannner_b{
+  margin-top:30px;
+ 
+}
+.arrows{
+  background: #e29587;
+  color:white;
+  padding: 10px;
+  border-radius: 50%;
+}
+.arrows:hover{
+    background: linear-gradient(90deg, #fffbd5 0%, 
+#ffc0cb 100%);
+color: #F08787;
+}
+.prr{
+position:absolute;
+top:40%;
+z-index: 100;
+left:2%;
+}
+.nrr{
+position: absolute;
+left:95%;
+top:40%;
+z-index: 100;
+}
+
+/*------------- banner part end ---------------*/
+/* -------Category part start------------- */
+.categoryImg{
+  width:50px;
+  height:50px;
+}
+.categoryImgCont{
+    background: linear-gradient(135deg, #e1160f32 0%, #ffffff9b 100%);
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:2px solid white;
+    margin: 0 auto;
+}
+.category_card{
+    background: linear-gradient(135deg, #e1160f32 0%, #ffffff9b 100%);
+    width:100%;
+    padding:10px;
+border-radius: 20px;
+height:300px;
+position: relative;
+}
+
+.categories .common_head{
+  font-family: "Russo One", sans-serif;
+  margin-bottom:30px;
+  text-align: center;
+   font-size: 30px; 
+   margin-top:20px;
+}
+.category_card h3{
+   background: linear-gradient(90deg, #c76f6c 0%, #ffffff3c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-family: "Russo One", sans-serif;
+  text-align: center;
+ 
+}
+.category_card:hover .categoryImgCont{
+      border:2px solid white;
+      box-shadow: 0 0 10px rgba(255, 107, 107, 0.7),
+              0 0 20px rgba(255, 82, 82, 0.5),
+              0 0 30px rgba(255, 138, 128, 0.4);
+      cursor:pointer;
+}
+.category_button{
+  position:absolute;
+ 
+left:30%;
+  bottom:0;
+}
+.category_card p{
+  font-family: "Montserrat Alternates", sans-serif;
+}
+/* ------Category part end--------------- */
+/* --------Game collection part start------------ */
+.game_collection {
+  padding: 20px;
+  margin-bottom:30px;
+  margin-top: 20px;
+}
+.game_collection .common_head{
+  display:flex;
+justify-content: space-between;
+}
+.game_collection .common_head h2{
+  font-family: "Russo One", sans-serif;
+  margin-bottom:20px;
+   font-size: 30px;
+   margin-top: 20px;
+}
+ .common_head select{
+   background: linear-gradient(135deg, #ef3c3632 0%, #ffffff9b 100%);
+   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+ border: none;
+      outline: none;
+      cursor: pointer;
+padding:10px;
+  font-family: "Montserrat Alternates", sans-serif;
+
+}
+
+
+select option{
+     background: linear-gradient(135deg, #e1160f32 0%, #ffffff9b 100%);
+}
+.game_card{
+  background: linear-gradient(135deg, #ef3c3632 0%, #ffffff9b 100%);
+   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+ padding:20px;
+ border-radius: 10px;
+ margin-bottom: 10px;
+text-align: center;
+height:450px;
+}
+.game_card img{
+width:100%;
+height:200px;
+border-radius: 10px;
+}
+.game_card h3{
+ background: linear-gradient(90deg, #ef3b36 0%, #ffffff3c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-family: "Russo One", sans-serif;
+}
+ .game_des{
+font-family: "Montserrat Alternates", sans-serif;
+ }
+
+ .game_card button{
+  margin:10px;
+ }
+ .see_more_button{
+ border:0;
+  outline:0;
+  background: linear-gradient(135deg, #e1160f32 0%, #ffffff9b 100%);
+  display:block;
+  width: 200px; 
+ margin-left: 64%;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: "Montserrat Alternates", sans-serif;
+ margin-bottom: 10px;
+ margin-top:10px;
+ border-radius: 20px;
+ }
+/* --------Game collection part end------------- */
+/*----------- Trendy game part start------------ */
+.trendy_games .common_head{
+ font-family: "Russo One", sans-serif;
+  margin-bottom:30px;
+
+   font-size: 30px; 
+   margin-top:20px;
+}
+.trendy_card{
+  background: linear-gradient(135deg, #ef3c3632 0%, #ffffff9b 100%);
+   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+ padding:20px;
+ border-radius: 10px;
+ margin-bottom: 10px;
+text-align: center;
+/* height:450px; */
+position:relative;
+}
+.trendy{
+  width:40px;
+  height:40px;
+  position:absolute;
+  left:-10px;
+  top:-22px;
+}
+.star{
+  width:20px;
+  height:20px;
+}
+.memory_game{
+  width:100%;
+height:200px;
+border-radius: 10px;
+}
+.Rating_player{
+  display:flex;
+  justify-content: center;
+  gap:10px;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.trendy_card h3{
+   background: linear-gradient(90deg, #ef3b36 0%, #ffffff3c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-family: "Russo One", sans-serif;
+}
+.category{
+    font-family: "Montserrat Alternates", sans-serif;
+}
+.trendy_button{
+margin-top:20px;
+}
+.category1{
+   background: linear-gradient(90deg, #ef3b36 0%, #0e00003c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+.trendy_header{
+  display:flex;
+}
+ .see_more_button1{
+ border:0;
+  outline:0;
+  background: linear-gradient(135deg, #e1160f32 0%, #ffffff9b 100%);
+  display:block;
+  width: 200px; 
+ margin-left: 64%;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: "Montserrat Alternates", sans-serif;
+ margin-bottom: 10px;
+ margin-top:10px;
+ border-radius: 20px;
+ }
+
+/*----------- Trendy game part end-------------- */
+/* ------------ Review part start-------------------*/
+
+.review .common_head{
+  font-family: "Russo One", sans-serif;
+  margin-bottom:30px;
+  text-align: center;
+   font-size: 30px; 
+   margin-top:20px;
+}
+.review-header{
+  text-align: center;
+}
+.review-header img{
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+}
+
+.review-card{
+   background: linear-gradient(135deg, #ef3c3632 0%, #ffffff9b 100%);
+   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  width:90%;
+  padding:10px;
+  margin:5px;
+}
+.review-card p{
+  font-family: "Montserrat Alternates", sans-serif; 
+}
+.review-card .author{
+font-family: "Montserrat Alternates", sans-serif; 
+}
+/* Dots wrapper */
+.slick-dots {
+  text-align: center;
+  bottom: -20px; /* slider এর নিচে dots নামবে */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Each dot button */
+.slick-dots li button:before {
+  font-size: 19px;          /* dot size */
+  color: #ccc;              /* inactive color */
+  opacity: 1;               /* ensure visible */
+  transition: color 0.3s;
+}
+
+/* Active dot */
+.slick-dots li.slick-active button:before {
+  color: #ff6600;           /* active dot color */
+}
+
+/* Hover effect */
+.slick-dots li button:hover:before {
+  color: #ff6600;
+}
+
+/* Small spacing between dots */
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+/* ------------Review part end----------------------- */
+
+/*------------ footer part start --------------*/
+footer{
+  margin-top:60px;
+}
+.footer_main_part{
+  display:flex;
+  gap:70px;
+  justify-content: center;
+  align-items: center;
+   background: linear-gradient(135deg, #ef3c3632 0%, #ffffff9b 100%) ;
+   padding:20px;
+     font-family: "Montserrat Alternates", sans-serif;
+}
+.part1 img{
+width:50px;
+height:50px;
+}
+ul li{
+  list-style: none;
+}
+.main_header{
+  font-weight: bold;
+}
+a{
+ text-decoration: none; 
+  color: inherit;       
+  cursor: pointer; 
+}
+.part2{
+  margin-top: 10px;
+}
+.two_header{
+  margin-top:-13px;
+}
+.three_header{
+   margin-top:-13px;
+}
+.footer_input{
+  border:0;
+  outline:0;
+  padding:10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  background: #ef3c3632 ;
+}
+
+/*------------ footer part end ----------------*/

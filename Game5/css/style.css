@@ -1,0 +1,78 @@
+/* font link */
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+/* font link */
+
+*{
+  margin:0;
+  padding:0;
+  font-family: "Luckiest Guy", cursive;
+}
+body{
+background-image: linear-gradient(#fffbd5, #b20a2c);
+}
+/* Display(level and score) part start */
+.display_container{
+ position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: #b20a2c44;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color:white;
+  font-size: 20px;
+  z-index: 1000;
+}
+/* Display(level and score) part end */
+/* Image container part start */
+.container{
+  display:flex;
+  gap:10px;
+  justify-content: center;
+}
+.container-list{
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+background:#ff5e6139;
+  width:400px;
+height:  550px;;
+text-align: center;
+color: white;
+}
+#container_image{
+  position: relative;
+width:600px;
+height:550px;
+  background: url("/Game5/images/messy_room.jpg") no-repeat center center;
+
+  background-size: cover;
+}
+/* Image container part end */
+/* hidden object part start*/
+.object-item {
+  position: absolute;
+  width:20px;
+  height: auto;
+  cursor: pointer;
+}
+/* hidden object part end*/
+/* level show toaster part start */
+.toast {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-size: 18px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 9999;
+}
+.toast.show {
+  opacity: 1;
+}
+/* level show toaster part end */

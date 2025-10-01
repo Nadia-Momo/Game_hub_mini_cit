@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+  padding: 0;
+  background-image: url(../images/game_theme.webp);
+  /* ../images/game_theme.webp */
+ 
+background-position: center;
+   background-attachment: fixed;
+  background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+/* game part start */
+#game{
+  position: relative;
+width: 1000px;
+height: 500px;
+ overflow: hidden; /* scrollbar gone */
+     
+}
+.fruit{
+    position:absolute;
+    width:40px;
+    height:40px;
+    user-select: none;
+    top:0;
+    pointer-events: none;
+}
+#basket {
+  position: absolute;
+  z-index: 7889;
+  bottom: 0;
+  left: 220px;
+  width: 300px;  
+  height: 120px;   
+  background-image: url(../images/wicker-basket.png);
+  background-size: contain;   /* image টা div এর ভেতরে ফিট হবে */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* game part end */
+/* Scoreboard part start */
+#scoreboard {
+  position: absolute;
+  width: 1000px; /* same as game */
+  margin: 20px auto;
+  padding: 15px 25px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #ff6a88b7, #ff99ace7);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  animation: glow 3s infinite alternate;
+left:100px;
+}
+
+
+#scoreboard .title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+  letter-spacing: 2px;
+}
+
+
+#scoreboard .stats {
+  display: flex;
+  justify-content: space-around;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+#score, #lives {
+  background: rgba(255,255,255,0.2);
+  padding: 10px 25px;
+  border-radius: 12px;
+  box-shadow: inset 0 0 8px rgba(255,255,255,0.7);
+}
+
+
+@keyframes glow {
+  from { box-shadow: 0 0 10px #ff6a88; }
+  to   { box-shadow: 0 0 25px #ff99ac; }
+}
+/* scoreboard part end */
+/* sweet alert css part start */
+.swal2-container {
+  z-index: 99999 !important; /* highest rakho */
+  background: rgba(20, 20, 20, 0.4) !important;    
+  backdrop-filter: blur(6px) !important;             
+  -webkit-backdrop-filter: blur(6px) !important;     
+  border-radius: 20px !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.6),
+              0 0 40px rgba(0, 255, 128, 0.4) !important; 
+  color: #fff !important;                             
+  font-family: 'Poppins', sans-serif !important;
+}
+/* sweet alert css part  */

@@ -1,0 +1,95 @@
+/* -----common css start-------- */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    background-image: url('../images/pokemon-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+}
+img{
+    width: 100%;
+    vertical-align: middle;
+}
+/* -----board css end-------- */
+#board{
+    width:30vw;
+    height:54vh;
+    margin: 0 auto;
+    background-color: green;
+    border: 10px solid gray;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.card{
+    width: 19%;
+    height: 22%;
+    margin-left : 3.5px;
+}
+
+
+button{
+    
+    padding:15px 20px;
+    border: none;
+    background-color: #3C467B;
+    border-radius: 8px;
+    text-align: center;
+    color:#FAF8F1;
+
+}
+.playAagin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    margin-bottom: 10px;
+}
+.yes{
+
+    padding:15px 20px;
+    border: none;
+    background-color: #004030;
+    border-radius: 8px;
+    text-align: center;
+    color:#FAF8F1;
+
+}
+.no{
+    padding:15px 20px;
+    border: none;
+    background-color: #DD0303;
+    border-radius: 8px;
+    text-align: center;
+    color:#FAF8F1;
+
+}
+/* -----board css start-------- */
+/* -----common css end-------- */
+
+/* -----common css start-------- */
+/* -----common css end-------- */
+
+/* -----common css start-------- */
+/* -----common css end-------- */
+
+/* -----common css start-------- */
+/* -----common css end-------- */
+
+
+/* -----common css start-------- */
+/* -----common css end-------- */

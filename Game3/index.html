@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tropical Slash</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/Responsive.css">
+</head>
+<body>
+  <!-- Main game area -->
+<div id="gamePlay">
+  <!-- scoreboard part start -->
+   <div id="responsive_score_missed">
+    <div id="scoreBoard">
+  <div class="score-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#F87171" width="28" height="28">
+      <path d="M12 2C10 2 8 4 8 6s2 4 4 4 4-2 4-4-2-4-4-4zM6 12c-1 0-2 1-2 2s1 4 3 4c1 0 2-1 2-2s-1-4-3-4zm12 0c-2 0-3 3-3 4s1 2 2 2 3-1 3-3-1-3-2-3z"/>
+    </svg>
+  </div>
+  <span id="score">0</span>
+</div>
+<!-- scoreboard part end -->
+ <!-- missed fruit scoreboard start -->
+<div id="missedBoard">
+  <div class="miss-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#F472B6" width="28" height="28">
+      <path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm1 16h-2v-2h2v2zm0-4h-2V6h2v6z"/>
+    </svg>
+  </div>
+  <span id="missedFruits">0</span>
+</div>
+   </div>
+
+ <!-- missed fruit scoreboard end -->
+  <!-- gameover modal start -->
+<div id="gameOverModal" class="modal hidden">
+  <div class="modal-content">
+    <h2>🎮 Game Over!</h2>
+    <p>You missed too many fruits 😢</p>
+    <p id="modal_score"></p>
+    <button id="restartBtn">Restart</button>
+  </div>
+</div>
+ <!-- gameover modal end-->
+</div>
+<!-- Main game area end -->
+
+<script src="js/script.js"></script>
+</body>
+</html>
