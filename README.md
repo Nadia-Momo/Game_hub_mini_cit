@@ -77,7 +77,7 @@ Welcome to **GAME HUB** – a fun, interactive web game hub created for the **Cr
 
 ## 🔗 Live Link
 
-[Play GAME HUB](https://nadia-momo.github.io/GAME_HUB_Creative_it_institute/)  
+[Play GAME HUB](https://nadia-momo.github.io/Game_hub_mini_cit/)  
 
 ---
 
